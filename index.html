@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tong Sampah Efektif dan Efisien</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f6f9f7;
+color:#333;
+line-height:1.7;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(34,139,34,0.95);
+padding:15px 0;
+z-index:1000;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav .container{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+opacity:.7;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1528323273322-d81458248d40");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:52px;
+font-weight:700;
+}
+
+.hero p{
+margin-top:15px;
+font-size:20px;
+}
+
+.hero button{
+margin-top:30px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#4caf50;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.hero button:hover{
+transform:scale(1.05);
+}
+
+/* ================= SECTION ================= */
+
+section{
+padding:90px 0;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#2e7d32;
+font-size:32px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+background:white;
+padding:25px;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* ================= GRID ================= */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* ================= TABLE ================= */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+border-radius:12px;
+overflow:hidden;
+}
+
+th{
+background:#2e7d32;
+color:white;
+padding:14px;
+}
+
+td{
+padding:12px;
+border-bottom:1px solid #eee;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery img{
+width:100%;
+border-radius:12px;
+transition:.4s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* ================= ANIMATION ================= */
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div class="container">
+<a href="#home">Beranda</a>
+<a href="#about">Tentang</a>
+<a href="#stem">STEM</a>
+<a href="#gotong">Gotong Royong</a>
+<a href="#dokumentasi">Dokumentasi</a>
+<a href="#refleksi">Refleksi</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div>
+<h1>TONG SAMPAH EFEKTIF DAN EFISIEN</h1>
+<p>Proyek STEM Berbasis Nilai Gotong Royong — Mata Pelajaran PPKn</p>
+<button onclick="document.getElementById('about').scrollIntoView()">Lihat Proyek</button>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade">
+<div class="container">
+<h2>About Me</h2>
+
+<div class="card">
+<p>
+Saya <b>Delvin Sanjaya Wang</b>, siswa kelas <b>XI.E SMA Katolik Yos Sudarso Batam</b>.
+Proyek ini dibuat berdasarkan observasi lingkungan sekolah khususnya di area lapangan parkiran.
+Ditemukan banyak sampah daun kering berserakan serta beberapa tong sampah yang rusak
+dan sering penuh sehingga mengurangi kebersihan lingkungan.
+</p>
+
+<p>
+Melalui proyek ini, kelompok kami merancang tong sampah yang lebih efektif,
+efisien, dan tahan lama untuk meningkatkan kebersihan sekolah serta
+menanamkan nilai gotong royong.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- TUJUAN -->
+<section class="fade">
+<div class="container">
+<h2>Tujuan Proyek</h2>
+
+<div class="grid">
+
+<div class="card">🌱 Meningkatkan kebersihan lingkungan sekolah.</div>
+<div class="card">♻ Efisiensi pengelolaan sampah.</div>
+<div class="card">🤝 Melatih kerja sama kelompok.</div>
+<div class="card">🔬 Penerapan konsep STEM nyata.</div>
+
+</div>
+</div>
+</section>
+
+<!-- STEM -->
+<section id="stem" class="fade">
+<div class="container">
+<h2>Tahapan Proyek STEM</h2>
+
+<div class="grid">
+<div class="card"><b>Science</b><br>Analisis jenis sampah.</div>
+<div class="card"><b>Technology</b><br>Pemanfaatan alat dan bahan.</div>
+<div class="card"><b>Engineering</b><br>Perancangan struktur tong.</div>
+<div class="card"><b>Mathematics</b><br>Perhitungan ukuran dan volume.</div>
+<div class="card"><b>Testing & Evaluation</b><br>Pengujian hasil.</div>
+</div>
+
+</div>
+</section>
+
+<!-- GOTONG ROYONG -->
+<section id="gotong" class="fade">
+<div class="container">
+<h2>Penerapan Nilai Gotong Royong</h2>
+
+<table>
+<tr>
+<th>Nilai</th>
+<th>Penjelasan</th>
+<th>Penerapan</th>
+</tr>
+
+<tr><td>Sukarela</td><td>Bekerja tanpa paksaan</td><td>Semua anggota aktif berpartisipasi</td></tr>
+<tr><td>Persatuan</td><td>Membangun kesepakatan bersama</td><td>Menentukan desain bersama</td></tr>
+<tr><td>Kesatuan</td><td>Aksi nyata bersama</td><td>Merakit tong secara kolaboratif</td></tr>
+<tr><td>Sosialisasi</td><td>Komunikasi aktif</td><td>Diskusi pembagian tugas</td></tr>
+<tr><td>Kekeluargaan</td><td>Hubungan harmonis</td><td>Saling menghargai ide</td></tr>
+<tr><td>Tolong-menolong</td><td>Saling membantu</td><td>Membantu anggota kesulitan</td></tr>
+</table>
+
+<p style="margin-top:15px;">
+<b>Persatuan</b> adalah proses membangun kesepakatan,
+sedangkan <b>Kesatuan</b> merupakan tindakan nyata dari persatuan tersebut.
+</p>
+
+</div>
+</section>
+
+<!-- DOKUMENTASI -->
+<section id="dokumentasi" class="fade">
+<div class="container">
+<h2>Dokumentasi Kegiatan</h2>
+
+<div class="grid gallery">
+<img src="FOTO.jpeg" alt="Dokumentasi 1">
+<img src="FOTO5.jpeg" alt="Dokumentasi 2">
+<img src="FOTO3.jpeg" alt="Dokumentasi 3">
+<img src="FOTO4.jpeg" alt="Dokumentasi 4">
+<img src="FOTO2.jpeg" alt="Dokumentasi 5">
+</div>
+
+<section class="fade">
+<div class="container">
+<h2>Hasil dan Dampak Proyek</h2>
+
+<div class="grid">
+
+<div class="card">
+<b>Lingkungan Lebih Bersih</b><br>
+Area parkiran menjadi lebih rapi karena tersedia tempat pembuangan sampah yang memadai.
+</div>
+
+<div class="card">
+<b>Peningkatan Kesadaran Siswa</b><br>
+Siswa menjadi lebih sadar pentingnya membuang sampah pada tempatnya.
+</div>
+
+<div class="card">
+<b>Pengalaman Belajar Nyata</b><br>
+Peserta didik belajar memecahkan masalah nyata melalui pendekatan STEM.
+</div>
+
+<div class="card">
+<b>Penguatan Karakter</b><br>
+Nilai kerja sama, tanggung jawab, dan kepedulian sosial semakin berkembang.
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- REFLEKSI -->
+<section id="refleksi" class="fade">
+<div class="container">
+<h2>Refleksi Pembelajaran</h2>
+
+<div class="card">
+<p>
+Proyek ini memberikan pengalaman nyata mengenai pentingnya kerja sama,
+kepedulian lingkungan, serta penerapan STEM dalam kehidupan sehari-hari.
+Siswa belajar berpikir kritis dan menerapkan nilai gotong royong.
+</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>
+Delvin Sanjaya Wang — XI.E<br>
+SMA Katolik Yos Sudarso Batam<br>
+Proyek PPKn 2026
+</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+observer.observe(el);
+});
+</script>
+
+</body>
+</html>
